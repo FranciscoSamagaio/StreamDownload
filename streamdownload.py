@@ -41,8 +41,6 @@ def download_youtube(search_query, download_type):
         print(f"Error: {e}")
 
 if __name__ == "__main__":
-    # Ask the user to input the search query
-    search_query = input("Enter the Music to download: ")
 
     while True:
         # Ask the user what type to download
@@ -51,5 +49,8 @@ if __name__ == "__main__":
             break
         else:
             print("Invalid input. Please enter 'audio' or 'video'.")
+            
+    # Ask the user to input the search query
+    search_query = input("Enter the search query to download: ")
 
     download_youtube(search_query, download_type)
